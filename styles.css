@@ -1,4 +1,4 @@
-
+/*Opdracht 1 en 2*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 
 * {
@@ -21,15 +21,23 @@ h1, h2, h3 {
     font-family: 'Merriweather', serif;
 }
 
-
+/*Opdracht 1 en 2*/
 header {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(76,9,121,1) 35%, rgba(0,212,255,1) 100%);
     position: relative;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
+.header-row-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 .navigation {
     display: flex;
@@ -58,7 +66,7 @@ header {
     padding: 20px 0px 30px 0px;
 }
 
-.knop {
+.button-header {
     border-radius: 30px;
     padding: 15px 25px 15px 25px;
     margin-bottom: 30px;
@@ -68,7 +76,7 @@ header {
 }
 
 
-.opdracht23 {
+.inner-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,8 +90,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;}
+
+.nav-link {
+    outline: none;
+    text-decoration: none;
+    color: white;
 }
+.question {
+    margin-top: 40px;
+}
+/*Opdracht 1 en 2*/
+/* Opdracht 3 */
 .outer-container {
     display: flex;
     flex-basis: 1100px;
@@ -119,7 +137,16 @@ header {
 .small-container-link {
     margin-top: 30px;
 }
+.outer-container-reverse {
+    display: flex;
+    flex-basis: 1100px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 25px 10px 25px 10px;
+}
+/*Opdracht 3*/
 
+/*Opdracht 4*/
 .image-service {
     width: 25%;
     margin: 15px 0px 15px 15px;
@@ -132,26 +159,6 @@ header {
 .service-para {
     color: #7A7A7A;
 }
-
-/* --------------- 3.2 Other --------------------------- */
-.outer-container-reverse {
-    display: flex;
-    flex-basis: 1100px;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    margin: 25px 10px 25px 10px;
-}
-
-.question {
-    margin-top: 40px;
-}
-
-.nav-link {
-    outline: none;
-    text-decoration: none;
-    color: white;
-}
-
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +173,9 @@ header {
     border-color: #5722CD;
     box-shadow: 7px 7px 7px #F3F6F9;
 }
-.opdracht24 {
+/*Opdracht 4*/
+/*Opdracht 5*/
+.contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,6 +208,7 @@ header {
     padding: 10px;
     background-color: #ED4385;
     color: #F3F6F9;
+    text-transform: uppercase;
 }
 .footer {
     background-color: #0C0C0C;
@@ -206,3 +216,4 @@ header {
     color: #F3F6F9;
     text-align: center;
 }
+/*Opdracht 5*/
