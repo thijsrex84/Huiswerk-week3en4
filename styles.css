@@ -1,31 +1,219 @@
-/*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+/*Opdracht 1 en 2*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 
-/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-/* ------------------------------- 2. Typography ----------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1200px;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
 
-/* --------------- 3.1 Reusables ----------------------- */
+/*Opdracht 1 en 2*/
+header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(76,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.header-row-container {
+    display: flex;
+    flex-direction: column;
 
-/* --------------- 3.2 Other --------------------------- */
+}
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
 
-/* --------------- 4.1 Header ------------------------- */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+}
 
-/* --------------- 4.2 Introduction ------------------- */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    flex-basis: 300px;
+    margin-right: 10px;
+    color: white;
+}
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+
+.image-header {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+
+}
+
+.h3header {
+    padding: 20px 0px 30px 0px;
+}
+
+.button-header {
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 30px;
+    background-color: #ED4385;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 450px;
+    width: 900px;
+    padding: 0 125px 0 175px;
+}
+.intro  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.nav-link {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+.question {
+    margin-top: 40px;
+}
+/*Opdracht 1 en 2*/
+/* Opdracht 3 */
+.outer-container {
+    display: flex;
+    flex-basis: 1100px;
+    justify-content: space-around;
+    margin: 25px 10px 25px 10px;
+}
+
+.small-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.small-container-img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    box-shadow:  0px 10px 10px #F3F6F9;
+
+}
+
+.small-container-line {
+    width: 20%;
+    margin: 30px 0px 30px 0px;
+}
+
+.small-container-link {
+    margin-top: 30px;
+}
+.outer-container-reverse {
+    display: flex;
+    flex-basis: 1100px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 25px 10px 25px 10px;
+}
+/*Opdracht 3*/
+
+/*Opdracht 4*/
+.image-service {
+    width: 25%;
+    margin: 15px 0px 15px 15px;
+}
+
+.head-service {
+    color: #5722CD;
+    margin-bottom: 30px;
+}
+.service-para {
+    color: #7A7A7A;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+
+.services > * {
+    flex-basis: 350px;
+    padding: 50px;
+    border-style: solid;
+    margin: 25px 0px 25px 25px;
+    border-color: #5722CD;
+    box-shadow: 7px 7px 7px #F3F6F9;
+}
+/*Opdracht 4*/
+/*Opdracht 5*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 600px;
+    padding: 50px 125px 50px 175px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(76,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #F3F6F9;
+}
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+
+}
+.input-field {
+    padding: 7px;
+}
+.input-message {
+    padding: 7px 7px 75px 7px;
+    margin-bottom: 25px;
+
+}
+
+.form-button {
+    border-radius: 30px;
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    background-color: #ED4385;
+    color: #F3F6F9;
+    text-transform: uppercase;
+}
+.footer {
+    background-color: #0C0C0C;
+    width: 100%;
+    color: #F3F6F9;
+    text-align: center;
+}
+/*Opdracht 5*/
